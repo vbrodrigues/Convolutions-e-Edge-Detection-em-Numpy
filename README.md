@@ -6,7 +6,7 @@ Uma convolução é uma operação que utiliza um filtro. Um filtro (as vezes ch
 
 Esse código utiliza um filtro de Gaussian Blur e Sobel Edge Detection em imagens.
 ### Filtro Sobel
-O Filtro Sobel é um filtro de detecção de contornos nas imagens. Ele primeiro realiza uma detecção de contornos verticais (Gy) e horizionais (Gx) separadamente. Após a aplicação dos filtros para essas duas orientações de contornos, calcula a norma ou magnitude G resultante de Gx e Gy.
+O Filtro Sobel é um filtro de detecção de contornos nas imagens. Ele primeiro realiza uma detecção de contornos verticais (sobel_y) e horizionais (sobel_x) separadamente. Após a aplicação dos filtros para essas duas orientações de contornos, calcula a norma ou magnitude resultante de Gx e Gy.
 
 Este código também compara um Filtro Sobel sem a aplicação de um desfoque Gaussiano anteriormente. A aplicação de um desfoque antes da aplicação de um Filtro Sobel pode diminuir o ruído captado pela detecção de contornos, realmente capturando só os contornos mais predominantes.
 
